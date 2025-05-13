@@ -1,211 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
-    <title>Boutique Homme </title>
-    <link rel="stylesheet" href="./index1.css">
-</head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Homme</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./index1.css">
+</head>
 <body>
-     <header>
-        <h1>Boutique Homme  </h1>
-        
-      </header>
-     <p class="menu-icon" onclick="toggleMenu()"> ☰</p>
-     <nav id="mobile-menu" class="mobile-menu">
-      <a href="./index.html">Accueil</a>
-      <div class="dropdown">
-        <a href="./touslesvêtements.html" onclick="toggleSubMenu(event)">Tous les vêtements ▾</a>
-        <div class="submenu" id="submenu-tous">
-          <a href="./ensembles.html">Ensemble</a>
-          <a href="./haut.html">Haut</a>
-          <a href="./bas.html">Bas</a>
+  <header>
+    <h1>Boutique Homme</h1>
+    <p class="menu-icon" onclick="toggleMenu()">☰</p>
+  </header>
+
+  <nav id="mobile-menu" class="mobile-menu">
+    <a href="./index.html">Accueil</a>
+    <div class="dropdown">
+      <a href="#" onclick="toggleSubMenu(event)">Tous les vêtements ▾</a>
+      <div class="submenu" id="submenu-tous">
+        <a href="./ensembles.html">Ensemble</a>
+        <a href="./haut.html">Haut</a>
+        <a href="./bas.html">Bas</a>
         <a href="./chaussures.html">Chaussures</a>
-        </div>
       </div>
-      <a href="./accessoires.html">Accessoies</a>
-    </nav>
-    
-     <section class="one">
-      <img src="./chemise/en.jpg" alt="">
-      <div class="on">
-        <br>
-        <br>
-        <br>
-        <br>
+    </div>
+    <a href="./accessoires.html">Accessoires</a>
+  </nav>
 
-    
-          <h1> Style Elégant</h1>
-    
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <h4>Faites sensation avec nos tendances inspirées - vêtement élégants chic et accessoies incontournables</h4>
-      </div>
-     </section>
-     <main>
-      <marquee behavior="" direction="right">
-        <h1> STYLE AUTHENTIQUE ELEGANT QUI VOUS REND PLUS BEAU 🌴 </h1>
+  <section class="one">
+    <img src="./chemise/en.jpg" alt="Image élégante">
+    <div class="on">
+      <h1>Style Elégant</h1>
+      <h4>Faites sensation avec nos tendances inspirées - vêtements élégants chic et accessoires incontournables</h4>
+    </div>
+  </section>
 
-      </marquee>
-    </main>
-     <section class="ban">
-      <img src="./chemise/m.jpg" alt="image">
-      <div class="tban">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br><br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-      
-       
-        <h4>Vêtemnts chic </h4>
-        <a href="./accessoires.html" class="exp"> explorer maintenant </a>
+  <main>
+    <marquee direction="right">
+      <h1>STYLE AUTHENTIQUE ÉLÉGANT QUI VOUS REND PLUS BEAU 🌴</h1>
+    </marquee>
+  </main>
 
-      </div><br><br>
-     </section>
-     <!--<section class="produit">
-      <div class="carte">
-        <img src="./chemise/IMG-20250416-WA0017.jpg" alt="image">
-        <h3>louis vitton </h3>
-        <p>coton original</p>
-      </div>
-      <div class="carte">
-        <img src="./chemise/IMG-20250408-WA0046.jpg" alt="">
-        <h3>lfendi</h3>
-      </div>
+  <section class="ban">
+    <img src="./chemise/m.jpg" alt="image">
+    <div class="tban">
+      <h4>Vêtements chic</h4>
+      <a href="./accessoires.html" class="exp">Explorer maintenant</a>
+    </div>
+  </section>
 
-     </section>-->
-     <script>
-      function toggleMenu( ){
-        const menu = document.getElementById('mobile-menu');
-        menu.style.display = menu.style.display === 'flex'? 'none' :'flex' ;   
-      }
-      function toggleSubMenu(event) {
-        event.preventDefault();
-        const submenu= document.getElementById('submenu-tous');
-        submenu.style.display=submenu.style.display   === 'flex' ? 'none' :'flex';
-      }
-     </script>
+  <div class="contact">
+    <p id="contact" class="a"><b>Contactez-nous via WhatsApp :</b></p>
+    <a class="whatsapp" href="#">Discuter sur WhatsApp</a>
+  </div>
 
-     
-     
-     <!--<div class="section">
-        <h2>Nos Chemises</h2>
-        <div class="galeries">
-          <img src="./img/IMG-20250416-WA0020.jpg" alt="Chemises">
-          <img src="./img/IMG-20250408-WA0043.jpg" alt="Chemises">  
-          <img src="./chemise/IMG-20250408-WA0043.jpg" alt="">
-          <img src="./chemise/IMG-20250408-WA0030.jpg" alt="">
-          <img src="./chemise/IMG-20250408-WA0054.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0017.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0020.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0020.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0023.jpg" alt=""> <br>
-        </div>
-        <div class="cmd">
-          <a class="cmd" href="#contact"  >
-            <span> <h3> Acheter </h3>  </span>
-           </a>
-         </div>
-        <h2>Nos Pantalons</h2>
-        <div class="gallery">
-            <img src="./img/IMG-20250408-WA0046.jpg" alt="">
-          <img src="./img/IMG-20250408-WA0030.jpg" alt="">
-          <img src="./img/IMG-20250408-WA0028.jpg" alt="">
-          <img src="./chemise/IMG-20250408-WA0030.jpg" alt="">
-          <img src="./chemise/IMG-20250408-WA0054.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0017.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0020.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0020.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0023.jpg" alt=""> 
-          <img src="./chemise/IMG-20250408-WA0030.jpg" alt="">
-          <img src="./chemise/IMG-20250408-WA0054.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0017.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0020.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0020.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0023.jpg" alt=""> <img src="./chemise/IMG-20250408-WA0030.jpg" alt="">
-          <img src="./chemise/IMG-20250408-WA0054.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0017.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0020.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0020.jpg" alt="">
-          <img src="./chemise/IMG-20250416-WA0023.jpg" alt=""> 
-        </div>
-      </div>
-      <div class="cmd">
-        <a class="cmd" href="#contact"  >
-          <span> <h3> Acheter</h3>  </span>
-         </a>
-       </div>
-     <div class="section">
-        <h2>Nos Chaussures</h2>
-        <div class="galler">
-          <img src="./chaussures/IMG-20250408-WA0031.jpg" alt="Chaussure 1">
-          <img src="./chaussures/IMG-20250408-WA0032.jpg" alt="Chaussure 1">
-          <img src="./chaussures/IMG-20250408-WA0045.jpg" alt="Chaussure 1">
-          <img src="./chaussures/IMG-20250416-WA0012.jpg" alt="Chaussure 1">
-          <img src="./chaussures/IMG-20250416-WA0014.jpg" alt="Chaussure 1">
-          <img src="./chaussures/IMG-20250416-WA0032.jpg" alt="Chaussure 1">
-          <img src="./chaussures/IMG-20250416-WA0021.jpg" alt="Chaussure 1">
-          <img src="./chaussures/IMG-20250416-WA0014.jpg" alt="Chaussure 1">
-        </div>
-     </div>
-     <div class="cmd">
-      <a class="cmd" href="#contact"  >
-        <span> <h3> Acheter </h3>  </span>
-       </a>
-     </div>
-     <div class="ouvert">
-      <h3>Ouvert</h3>
+  <footer>
+    <h1 class="brand">Chez Tunde</h1>
+    <p class="tagline">Tous vêtements d'Homme</p>
+    <h2>Suivez-nous</h2>
+   
+  <a href="https://www.instagram.com/tonprofil" target="_blank">
+    <i class="fab fa-instagram" style="color:#E4405F; font-size: 30px;"></i>
+  </a>
+  <a href="https://www.facebook.com/tonprofil" target="_blank">
+    <i class="fab fa-facebook" style="color:#1877F2; font-size: 30px;"></i>
+  </a>
 
-      <b>Lun </b>       9h00-23h00 <br><br>
-      <b>Mar </b>       9h00-23h00 <br><br>
-      <b>Mer </b>       9h00-23h00 <br><br>
-      <b>Jeu </b>       9h00-23h00 <br><br>
-      <b>Ven </b>       9h00-23h00 <br><br>
-      <b>Sam </b>       9h00-23h00 <br><br>
-      <b>Dim</b>       9h00-2300 <br><br>
-     </div> -->
-     <div class="contact">
-      <p id="contact" class="a"><b>Contacter Contactez-nous via whatsapp :</b></p>
-      <a class="whatsapp" href="">Discuter sur whatsapp</a>
-     </div> 
- 
-      <footer>
-        <h1 class="brand"> Chez Tunde</h1>
-        <P class="tagline"> Tous vêtements d'Homme</P>
-        <h2>Suivez-nous</h2>
-        <div>  
-          <a href="https://WWW.facebook.com/profie.php?id=61565466506879" >
-            <img src="../essai/images/facebook (1).png" alt="Facebook" width="30">
-          </a>
-          <a href="">
-            <img src="../essai/images/instagram (1).png" alt="Instagram" width="30">
-  
-          </a>
-        </div>
-        <p class="legal">Mentions légales</p>
-        &copy; 2025 Boutique Homme - Tous droits réservés
-      </footer>
+    <p class="legal">Mentions légales</p>
+    &copy; 2025 Boutique Homme - Tous droits réservés
+  </footer>
 
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    function toggleSubMenu(event) {
+      event.preventDefault();
+      const submenu = document.getElementById('submenu-tous');
+      submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
 </body>
 </html>
